@@ -5,7 +5,7 @@ input: current hv cluster information, utilization (GHz and memory utilized), an
 action: calculate the number of hv required
 export: text with number of hypervisors required
 
-Currently allows the naming and entry of one server configuration on each run. 
+Currently allows the naming and entry of one server configuration on each run.  Calculates # of servers required for cpu/memory workload only (does not consider io bound workloads).
 
 Future:
 - expand to 2-3 options to compare
@@ -15,3 +15,4 @@ Future:
 - save configurations to libraries
 - save configurations/libraries to files
 - django integration and run this from a web page
+- io workload for storage and ip/ethernet
